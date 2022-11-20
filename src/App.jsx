@@ -57,7 +57,7 @@ export default function App() {
   }
   const onSubmit = (e) => {
     e.preventDefault();
-    navigate(`/${e.target.value}`);
+    navigate(`/MusicShop/${e.target.value}`);
     const queryContainer = document.querySelector(".query-container");
     if (searchClose) {
       queryContainer.style.display = "none";
@@ -87,7 +87,7 @@ export default function App() {
             value={artist}
             onChange={handleChange}
           />
-          <Link to={`/${artist}`}>
+          <Link to={`/MusicShop/${artist}`}>
             <img
               onClick={handleSearch}
               className="logo"
@@ -99,7 +99,7 @@ export default function App() {
         <div className="query-line"></div>
       </div>
       <nav className="nav">
-        <Link to="/">
+        <Link to="/MusicShop">
           <h3>Vinyl Emporium</h3>
         </Link>
         <ul className="nav-links">
@@ -115,10 +115,10 @@ export default function App() {
         </ul>
       </nav>
       <Routes>
-        <Route path="/" exact element={<Shop />} />
-        <Route path="/:id" element={<Artist />} />
+        <Route path="/MusicShop" exact element={<Shop />} />
+        <Route path="/MusicShop/:id" element={<Artist />} />
         <Route
-          path="/artist:id"
+          path="/MusicShop/artist:id"
           element={
             <Product
               shoppingCart={shoppingCart}
@@ -168,7 +168,7 @@ export default function App() {
             </div>
             <br />
             <br />
-            <Link to="/">
+            <Link to="/MusicShop">
               <div onClick={handleCart} className="checkout">
                 {shoppingCart.length === 0 ? "Browse Products" : "Checkout"}
               </div>

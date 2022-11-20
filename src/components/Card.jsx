@@ -4,7 +4,7 @@ export default function Card(props) {
   return (
     <>
       <Link
-        to={`/artist=${props.name}&album=${props.album.name}`}
+        to={`/MusicShop/artist=${props.name}&album=${props.album.name}`}
         state={props.album}
       >
         <div className="album">
