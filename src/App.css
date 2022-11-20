@@ -209,6 +209,7 @@ img {
     display: flex;
     flex-direction: column;
     height: inherit;
+    margin-left: 100px;
 }
 
 .flex div {
@@ -237,7 +238,7 @@ img {
     flex-direction: row;
    width: 50%;
    justify-content: space-evenly;
-   margin: 40px 0;
+   margin: 100px 0;
 }
 .cart{
     position: fixed;
@@ -348,4 +349,102 @@ margin-bottom: 10px;
     text-align: center;
     
   
+}
+#wrap {
+	/* background-color: rgba(0,0,0,0.8);	 */
+    padding-left: 100px;
+}
+#album {
+	position: relative;
+    top: 50%;
+	width: max(8vw, 150px);
+    height: max(8vw, 150px);
+}
+#cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	box-shadow: 5px 0 20px 0 rgba(0,0,0,0.6),
+	            inset 0 0 10px 5px rgba(255,255,255,0.2),
+			  inset 0 0 4px 2px rgba(0,0,0,0.2);
+	border-radius: 4px;
+}
+	#cover::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+		border-radius: 4px;
+		mix-blend-mode: screen;
+		opacity: 0.5;
+		content: '';
+	}
+	#cover::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 20;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+		border-radius: 4px;
+		mix-blend-mode: screen;
+		opacity: 0.2;
+		content: '';
+	}
+
+#vinyl {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    z-index: 0;
+    width: 93%;
+    height: 93%;
+    display: block;
+    background-image: url('https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Music-PNG/Gramophone_Vinyl_LP_Record_PNG_Transparent_Clip_Art_Image.png?m=1462983196');
+    background-size: 106% 106%;
+    background-position: center;
+    box-shadow: 0 0 20px 4px rgba(0,0,0,0.6);
+    border-radius: 50%;
+    content: '';
+    animation: 5s linear spinThat infinite, 1s ease-out getOut 1s forwards;
+}
+    #vinyl::before {
+        position: absolute;
+        top: 2.5%;
+        left: 2.5%;
+        z-index: 10;
+        width: 95%;
+        height: 95%;
+        background-image: url('http://www.designresourcebox.com/ths/diverse/blacktextures/82267467.jpg');
+        background-size: 100% 100%;
+        border-radius: 50%;
+        mix-blend-mode: screen;
+        opacity: 0.3;
+        content: '';
+    }
+
+
+@keyframes getOut {
+0% {
+    left: 0;
+}
+100% {
+    left: 50%;
+}
+}
+@keyframes spinThat {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
 }

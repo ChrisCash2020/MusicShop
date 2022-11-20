@@ -28,7 +28,17 @@ export default function Product(props) {
     <>
       <div className="product margin">
         <div className="product-top">
-          <img src={location.state.albumCover} />
+          <div id="wrap">
+            <div id="album">
+              <div
+                id="cover"
+                style={{
+                  backgroundImage: `url('${location.state.albumCover}')`,
+                }}
+              ></div>
+              <div id="vinyl"></div>
+            </div>
+          </div>
           <div className="flex">
             <small>ALBUM</small>
             <h1>{location.state.name}</h1>
