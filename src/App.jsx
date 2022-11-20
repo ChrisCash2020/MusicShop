@@ -53,7 +53,7 @@ export default function App() {
     for (let i = 0; i < arr.length; i++) {
       sum += arr[i];
     }
-    return sum * 19.99;
+    return (sum * 19.99).toFixed(2);
   }
   const onSubmit = (e) => {
     e.preventDefault();
