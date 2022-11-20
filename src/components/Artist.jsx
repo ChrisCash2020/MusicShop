@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 
 function Artist(props) {
   const { id } = useParams();
-  console.log(id);
   const amount = props.amount === undefined ? 5 : props.amount;
   const [albumsArray, setAlbumsArray] = useState([]);
   const [artist, setArtist] = useState();
