@@ -14,7 +14,7 @@ import searchIcon from "./assets/search1.png";
 import closeIcon from "./assets/close.png";
 import closeDarkIcon from "./assets/close-dark.png";
 import cartBigLogo from "./assets/big-shopping-bag.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CartItem from "./components/CartItem";
 export default function App() {
   const location = useLocation();
@@ -22,7 +22,6 @@ export default function App() {
   const [searchClose, setSearchClose] = useState(false);
   const [artist, setArtist] = useState("");
   const [shoppingCart, setShoppingCart] = useState([]);
-  const [score, setScore] = useState(0);
   function handleChange(event) {
     const { value } = event.target;
     setArtist(value);
@@ -77,7 +76,7 @@ export default function App() {
             onClick={handleSearch}
             className="close-search logo"
             src={closeIcon}
-            alt=""
+            alt="Close Button"
           />
           <input
             onKeyPress={(e) => e.key == "Enter" && onSubmit(e)}
@@ -93,7 +92,7 @@ export default function App() {
               onClick={handleSearch}
               className="logo"
               src={searchIcon}
-              alt=""
+              alt="Search Icon"
             />
           </Link>
         </div>
@@ -106,7 +105,12 @@ export default function App() {
         <ul className="nav-links">
           <li onClick={handleSearch}>Search</li>
           <li>
-            <img className="logo" src={cartLogo} alt="" onClick={handleCart} />
+            <img
+              className="logo"
+              src={cartLogo}
+              alt="Cart Logo"
+              onClick={handleCart}
+            />
           </li>
         </ul>
       </nav>
@@ -126,7 +130,7 @@ export default function App() {
       <div className="cart">
         <img
           src={closeDarkIcon}
-          alt=""
+          alt="Close Button"
           className="cart-close"
           onClick={handleCart}
         />

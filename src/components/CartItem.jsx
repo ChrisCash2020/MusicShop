@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export default function CartItem(props) {
   function handleClick(type) {
     let exception = false;
