@@ -150,7 +150,7 @@ img {
   background: #0652dd;
   cursor: pointer;
   height: 2em;
-  width: 130px;
+  min-width: 130px;
   overflow: hidden;
   transition: transform 0.1s;
   z-index: 1;
