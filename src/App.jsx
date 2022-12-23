@@ -144,7 +144,7 @@ export default function App() {
                 <p style={{ margin: '40px 0 0', fontSize: '12px' }}>
                   Your Bag is Empty
                 </p>
-                <img src={cartBigLogo} />
+                <img className='cart-list-img' src={cartBigLogo} />
               </>
             )}
             <div style={{ margin: '25px 0 0', fontSize: '.9rem' }}>
