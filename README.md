@@ -10,11 +10,6 @@ Vinyl Emporium is a fake sales website where customers can browse and buy vinyls
 <a href="https://vinyl-imporium.netlify.app" target="_blank" >Live Demo</a>
 
 ## Design:
-## Design:
-
-### Client-side:
-
-This is the front-end repository
 
 > Preview
 <p>
