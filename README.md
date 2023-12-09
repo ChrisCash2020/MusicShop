@@ -8,7 +8,6 @@
 - Implemented an accurate recounting system for album purchases, price tracking, and product quantity with 100% accuracy, ensuring seamless customer transactions and
 precise inventory management.
 <br>
-<br>
 <a href="https://vinyl-emporium.netlify.app" target="_blank" >Live Demo</a>
 
 ## Design:
