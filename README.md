@@ -3,8 +3,11 @@
 
 ## Description:
 
-This project was made as a way to practice api fetching and json manipulation. <br>
-Vinyl Emporium is a fake sales website where customers can browse and buy vinyls of their favorite albums and songs.
+- Created and launched a mock e-commerce website for vinyl enthusiasts, enabling seamless browsing, and purchasing.
+- Sent fetch requests to LastFM API to deliver album/song data to the client based on user search query.
+- Implemented an accurate recounting system for album purchases, price tracking, and product quantity with 100% accuracy, ensuring seamless customer transactions and
+precise inventory management.
+
 <br>
 <br>
 <a href="https://vinyl-emporium.netlify.app" target="_blank" >Live Demo</a>
